@@ -426,7 +426,7 @@ function pmpro_courses_get_lessons_html( $course_id ) {
  * @since TBD
  *
  */
-function pmpro_courses_lessons_settings( $exclude_lessons = array(), $parent_id = 0 ) {
+function pmpro_courses_lessons_settings( $exclude_lessons = array() ) {
 	// Get all available lessons for the dropdown.
 	// Lessons are 1:1 with courses, so only lessons with no parent (post_parent = 0)
 	// are eligible. Lessons already assigned to any section of the current course

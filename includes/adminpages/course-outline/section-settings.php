@@ -35,7 +35,7 @@ if ( empty( $section ) ) {
 // within this course. Lessons assigned to other courses are excluded at the query level
 // (only post_parent = 0 lessons are fetched).
 $exclude_assigned_lessons = ! empty( $all_assigned_lessons ) ? $all_assigned_lessons : ( isset( $section['lessons'] ) ? array_map( 'intval', $section['lessons'] ) : array() );
-$lessons_options = pmpro_courses_lessons_settings( $exclude_assigned_lessons, $post->ID );
+$lessons_options = pmpro_courses_lessons_settings( $exclude_assigned_lessons );
 ?>
 <div class="pmpro_section pmpro_courses_lessons-section" data-section-id="<?php echo esc_attr( $section_id ); ?>" data-visibility="hidden">
 	<div class="pmpro_section_toggle">
